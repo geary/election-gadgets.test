@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Analytics test</title>
+</head>
+<body>
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push([ '_setAccount', 'UA-27854559-1' ]);
+		_gaq.push([ '_setDomainName', 'election-maps.appspot.com' ]);
+		
+		_gaq.push([ '_trackPageview', '/test1' ]);
+		
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/u/ga_debug.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>
